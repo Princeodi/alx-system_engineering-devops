@@ -41,7 +41,7 @@ frontend Ptech-frontend
         default_backend Ptech-backend
 
 frontend Ptech-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.PTech.com.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.PTech.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend Ptech-backend
 
