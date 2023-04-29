@@ -41,7 +41,7 @@ frontend Princewill-frontend
         default_backend Princewill-backend
 
 frontend Princewill-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/Princewill.tech.pem
+        bind *:443 ssl crt /etc/haproxy/certs/www.Princewill.tech.pem
         http-request set-header X-Forwarded-Proto https
         default_backend Princewill-backend
 
